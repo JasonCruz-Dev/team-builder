@@ -12,10 +12,10 @@ function Form(props) {
       <label htmlFor='emailInput'>Email</label>
       <input value={email} onChange={onEmailChange} id='emailInput' type='text' />
 
-      <label htmlFor='roleInput'>Email</label>
+      <label htmlFor='roleInput'>Role</label>
       <input value={role} onChange={onRoleChange} id='roleInput' type='text' />
 
-      <button>onSubmit</button>
+      <button>Submit</button>
     </form>
   );
 }
