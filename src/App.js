@@ -23,6 +23,30 @@ function App() {
   const [teamList, setTeamList] = useState(intitalTeamList);
   const [teamForm, setTeamForm] = useState(initialTeamForm);
 
+  const onNameChange = e => {
+    setTeamForm({
+      name: e.target.value,
+      email: teamForm.email,
+      role: teamForm.role
+    });
+  };
+
+  const onEmailChange = e => {
+    setTeamForm({
+      name: teamForm.name,
+      email: e.target.value,
+      role: teamForm.role
+    });
+  };
+
+  const onRoleChange = e => {
+    setTeamForm({
+      name: teamForm.name,
+      email: teamForm.email,
+      role: e.target.value
+    });
+  };
+
   return (
     <div className='App'>
       <Form
