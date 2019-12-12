@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import uuid from "uuid";
 import Form from "./components/Form";
 
 const intitalTeamList = [
@@ -19,7 +20,7 @@ const initialTeamForm = [
   }
 ];
 
-function App() {
+function App(props) {
   const [teamList, setTeamList] = useState(intitalTeamList);
   const [teamForm, setTeamForm] = useState(initialTeamForm);
 
@@ -69,7 +70,7 @@ function App() {
         onFormSubmit={onFormSubmit}
         onNameChange={onNameChange}
         onEmailChange={onEmailChange}
-        onTitleChange={onTitleChange}
+        onRoleChange={onRoleChange}
       />
     </div>
   );
