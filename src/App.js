@@ -47,6 +47,21 @@ function App() {
     });
   };
 
+  const onFormSubmit = e => {
+    e.preventDefault();
+
+    const newMember = {
+      id: uuid(),
+      name: teamForm.name,
+      email: teamForm.email,
+      role: teamForm.role
+    };
+    const newTeamList = teamList.concat(newMember);
+
+    setTeamList(newTeamList);
+    setTeamForm(initialTeamForm);
+  };
+
   return (
     <div className='App'>
       <Form
