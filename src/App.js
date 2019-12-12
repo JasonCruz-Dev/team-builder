@@ -20,6 +20,9 @@ const initialTeamForm = [
 ];
 
 function App() {
+  const [teamList, setTeamList] = useState(intitalTeamList);
+  const [teamForm, setTeamForm] = useState(initialTeamForm);
+
   return (
     <div className='App'>
       <Form
