@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  color: red;
+  margin: 0;
+  padding: 10%;
+  font-weight: 600;
+}
+
+.App-initialTeamLink {
+  margin: 5%;
+}

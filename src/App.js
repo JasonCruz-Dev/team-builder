@@ -72,6 +72,11 @@ function App(props) {
         onEmailChange={onEmailChange}
         onRoleChange={onRoleChange}
       />
+      {teamList.map(member => (
+        <h5 key={member.id}>
+          {member.name} {member.email} {member.role}
+        </h5>
+      ))}
     </div>
   );
 }
